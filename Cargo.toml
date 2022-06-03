@@ -1,0 +1,27 @@
+[package]
+name = "rust"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+wasm-bindgen = "0.2.80"
+js-sys = "0.3.57"
+termion = "1.5.6"
+
+[dependencies.web-sys]
+version = "0.3.57"
+features = [
+  "console",
+  "CssStyleDeclaration",
+  "Document",
+  "Element",
+  "HtmlDivElement",
+  "HtmlElement",
+  "KeyboardEvent",
+  "Window",
+]
